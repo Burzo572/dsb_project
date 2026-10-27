@@ -1,13 +1,13 @@
 **Bangladesh Flood Prediction**
-
+--------------------------------
 **Project Overview**
-
+--------------------------------
 This project explores environmental and hydrological data to better understand the factors associated with flooding in Bangladesh. The main objective is to investigate whether rainfall, soil moisture, river discharge, and historical environmental conditions are related to flood occurrence within the next 24 hours.
 
 The project focuses initially on Exploratory Data Analysis (EDA) to understand the dataset, assess data quality, identify patterns, and prepare the data for potential machine learning models.
 
 **Dataset Description**
-
+-----------------------
 The dataset is a daily, multi-station time series covering 30 river monitoring locations across Bangladesh.
 
 Original dataset size: 839,340 rows and 49 columns
@@ -25,7 +25,7 @@ Dataset source: Bangladesh Flood Data Set — GitHub
 Each row represents a particular station on a particular date. The dataset combines environmental variables, river discharge information, historical flood indicators, and engineered features derived from previous observations.
 
 **Data Sources**
-
+----------------
 The dataset was compiled from multiple free and public sources, including:
 
 Open-Meteo / ERA5 and ERA5-Land: rainfall and soil moisture data.
@@ -43,7 +43,7 @@ Bangladesh Flood Forecasting and Warning Centre (FFWC): information extracted fr
 These sources provide complementary information, but they differ in temporal coverage, measurement methods, and reliability.
 
 **Main Variables**
-
+-------------------
 -------------------------------------
 date
 
@@ -93,7 +93,7 @@ Flood label for the next 72 hours
 The dataset also contains lagged variables, rolling rainfall summaries, trend indicators, missing-value flags, and other derived environmental features.
 
 **Project Objective**
-
+---------------------
 The main research question is:
 
 Can environmental and hydrological variables help predict whether a flood will occur at a monitoring station within the next 24 hours?
@@ -107,7 +107,7 @@ The intended task is binary classification:
 These labels should not be interpreted as perfect confirmation that flooding did or did not occur in reality.
 
 **Limitations**
-
+---------------
 The dataset combines information from multiple sources with different levels of coverage and reliability.
 
 Some environmental variables are based on reanalysis or modelled products rather than direct measurements at a physical monitoring station.
