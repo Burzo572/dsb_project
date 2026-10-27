@@ -1,4 +1,4 @@
-**Bangladesh Flood Prediction — Exploratory Data Analysis**
+**Bangladesh Flood Prediction**
 
 **Project Overview**
 
