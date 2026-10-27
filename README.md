@@ -102,6 +102,10 @@ The intended task is binary classification:
 
 0 — no flood is recorded by the dataset's labeling procedure for the prediction horizon.
 
+1 — a flood is recorded by the dataset's labeling procedure for the prediction horizon.
+
+These labels should not be interpreted as perfect confirmation that flooding did or did not occur in reality.
+
 **Limitations**
 
 The dataset combines information from multiple sources with different levels of coverage and reliability.
