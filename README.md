@@ -42,12 +42,9 @@ Bangladesh Flood Forecasting and Warning Centre (FFWC): information extracted fr
 
 These sources provide complementary information, but they differ in temporal coverage, measurement methods, and reliability.
 
-Main Variables
+**Main Variables**
 
-Variable
-
-Description
-
+-------------------------------------
 date
 
 Date of the observation
@@ -92,6 +89,7 @@ flood_within_72h
 
 Flood label for the next 72 hours
 
+---------------------------------------------------------------
 The dataset also contains lagged variables, rolling rainfall summaries, trend indicators, missing-value flags, and other derived environmental features.
 
 **Project Objective**
@@ -103,6 +101,22 @@ Can environmental and hydrological variables help predict whether a flood will o
 The intended task is binary classification:
 
 0 — no flood is recorded by the dataset's labeling procedure for the prediction horizon.
+
+**Limitations**
+
+The dataset combines information from multiple sources with different levels of coverage and reliability.
+
+Some environmental variables are based on reanalysis or modelled products rather than direct measurements at a physical monitoring station.
+
+Flood labels may be incomplete because flood-detection sources do not observe every event.
+
+A label of 0 does not necessarily prove that no flood occurred.
+
+The original date range does not imply that every variable is available for every date.
+
+Relationships identified during EDA do not establish causation.
+
+Good model performance would not, by itself, establish that the model is suitable for operational flood warnings.
 
 1 — a flood is recorded by the dataset's labeling procedure for the prediction horizon.
 
