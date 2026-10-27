@@ -92,19 +92,17 @@ Flood label for the next 72 hours
 ---------------------------------------------------------------
 The dataset also contains lagged variables, rolling rainfall summaries, trend indicators, missing-value flags, and other derived environmental features.
 
-**Project Objective**
----------------------
-The main research question is:
+**Data Types**
+---------------
+The dataset contains time-series, numerical, and categorical data. It includes daily observations for multiple monitoring stations, with numerical variables such as rainfall, river discharge, soil moisture, and elevation, as well as categorical variables such as station identifiers and names.
 
-Can environmental and hydrological variables help predict whether a flood will occur at a monitoring station within the next 24 hours?
+**Data Science Problem**
+------------------------
+The goal of this project is to investigate whether environmental and hydrological variables can be used to predict a flood within the next 24 hours.
 
-The intended task is binary classification:
+Research question: Can rainfall, river discharge, soil moisture, and other relevant features help predict whether a flood will occur within the next 24 hours at a given station?
 
-0 — no flood is recorded by the dataset's labeling procedure for the prediction horizon.
-
-1 — a flood is recorded by the dataset's labeling procedure for the prediction horizon.
-
-These labels should not be interpreted as perfect confirmation that flooding did or did not occur in reality.
+This is a supervised binary classification problem because the target variable, flood_within_24h, has two possible classes: 0 (no flood labeled) and 1 (flood labeled).
 
 **Limitations**
 ---------------
