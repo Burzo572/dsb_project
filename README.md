@@ -123,3 +123,15 @@ Good model performance would not, by itself, establish that the model is suitabl
 1 — a flood is recorded by the dataset's labeling procedure for the prediction horizon.
 
 These labels should not be interpreted as perfect confirmation that flooding did or did not occur in reality.
+
+**Main EDA Findings**
+----------------------
+Class Imbalance: The target variable flood_within_24h is highly imbalanced, with significantly more non-flood observations than flood observations. This is an important consideration for model selection and evaluation.
+
+Missing Values: Several features contained a substantial number of missing values. Columns with a high proportion of missing data were removed during the data preparation process.
+
+River Discharge: Initial visual analysis showed differences in river discharge values between flood and non-flood observations. Flood observations generally showed higher discharge values, although the distributions overlapped.
+
+Time-Based Patterns: The number of recorded flood observations varied across years and monitoring stations. In particular, 2025 showed a noticeably lower number of positive observations compared with previous years, which requires careful consideration during model evaluation.
+
+Feature Relationships: Historical rainfall, soil moisture, and river discharge measurements, together with their lagged and aggregated features, provide potentially useful information for predicting future flood events.
