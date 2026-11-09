@@ -44,7 +44,7 @@ These sources provide complementary information, but they differ in temporal cov
 
 **Main Variables**
 -------------------
--------------------------------------
+
 date
 
 Date of the observation
@@ -89,7 +89,7 @@ flood_within_72h
 
 Flood label for the next 72 hours
 
----------------------------------------------------------------
+
 The dataset also contains lagged variables, rolling rainfall summaries, trend indicators, missing-value flags, and other derived environmental features.
 
 **Data Types**
